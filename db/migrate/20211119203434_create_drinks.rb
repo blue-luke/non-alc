@@ -1,7 +1,6 @@
 class CreateDrinks < ActiveRecord::Migration[6.1]
   def change
     create_table :drinks do |t|
-      t.string :manufacturer
       t.string :name
       t.string :drink_type
       t.float :concentration
