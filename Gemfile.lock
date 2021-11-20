@@ -75,7 +75,6 @@ GEM
     crass (1.0.6)
     erubi (1.10.0)
     ffi (1.15.4)
-    gem (0.0.1.alpha)
     globalid (0.5.2)
       activesupport (>= 5.0)
     i18n (1.8.11)
@@ -160,7 +159,6 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.12)
   bootsnap (>= 1.4.4)
   byebug
-  gem (~> 0.0.1.alpha)
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)
