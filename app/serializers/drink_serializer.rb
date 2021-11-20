@@ -5,4 +5,5 @@ class DrinkSerializer < ActiveModel::Serializer
     manufacturer_year_founded: self.object.manufacturer.year_founded
     manufacturer_country_founded: self.object.manufacturer.country_founded}
   end
+  
 end
