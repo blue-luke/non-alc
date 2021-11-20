@@ -9,13 +9,23 @@ This was a short exercise designed to practice my API skills. The aim was to set
 Download the repo and push it to a host such as heroku.
 Run db:migrate and db:seed to populate with sample data.
 
-Exposed paths are:
-- /drinks
+## Completed steps
+
+- Set up db and api
+- Hosted on heroku, exposed on https://non-alc.herokuapp.com/drinks
+
+## Existing obstacles
+
+- Can no longer get api running on local host, an error when running bin/rails s
+
+## Obstacles overcome
+
+- Recurring problem with the platform: Your bundle only supports platforms ["x86_64-darwin-20"] but your local platform is x86_64-linux. Fixed by executing: bundle lock --add-platform x86_64-linux.
 
 ## Next steps
 
-- Populate the db with data
 - Use a serializer to structure the JSON, enabling nested data
+- Enable curl commands to get and post data
 - Clarify fetch routes and responses
 
 ## Possible next steps
