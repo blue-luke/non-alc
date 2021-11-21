@@ -19,6 +19,7 @@ Run db:migrate and db:seed to populate with sample data.
 ## Existing blockers
 
 - Creating a drink requires knowing the manufacturer id. Without a front end to fetch and store this, how can the user know what the manufacturer id is?
+- Solve this by taking manufacturer name as a parameter, then calling set_manufacturer, finding the manufacturer's ID, and defining the manufacturer params in light of this
 
 ## Paths (for command line)
 
