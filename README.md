@@ -12,10 +12,15 @@ Run db:migrate and db:seed to populate with sample data.
 ## Completed steps
 
 - Set up db and api
-- Hosted on heroku, exposed on https://non-alc.herokuapp.com/drinks
+- Hosted on heroku
 - Use a serializer to structure the JSON, enabling nested data
 
 ## Existing obstacles
+
+
+## Paths (for command line)
+
+- curl https://non-alc.herokuapp.com/drinks 
 
 
 ## Obstacles overcome, reverse chronological
@@ -37,25 +42,6 @@ Run db:migrate and db:seed to populate with sample data.
 
 - Create a web-scraper or file-scraper to auto-populate additional information
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+curl -X POST -H "Content-Type: application/json" \
+    -d '{"manufacturer": {"name": "Becks", "year_founded": "1873", "country_founded": "Germany"} }' \
+    https://non-alc.herokuapp.com/manufacturers
