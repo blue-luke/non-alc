@@ -20,8 +20,16 @@ Run db:migrate and db:seed to populate with sample data.
 
 ## Paths (for command line)
 
+To display drinks:
 - curl https://non-alc.herokuapp.com/drinks 
-
+To create manufacturer:
+- curl -X POST -H "Content-Type: application/json" \
+    -d '{"manufacturer": {"name": "Becks", "year_founded": "1873", "country_founded": "Germany"} }' \
+    https://non-alc.herokuapp.com/manufacturers
+To create drink:
+- curl -X POST -H "Content-Type: application/json" \
+    -d '{"drink": {"name": "Blue", "drink_type": "lager", "concentration": 0.05 } }' \
+    https://non-alc.herokuapp.com/drinks
 
 ## Obstacles overcome, reverse chronological
 
@@ -42,6 +50,3 @@ Run db:migrate and db:seed to populate with sample data.
 
 - Create a web-scraper or file-scraper to auto-populate additional information
 
-curl -X POST -H "Content-Type: application/json" \
-    -d '{"manufacturer": {"name": "Becks", "year_founded": "1873", "country_founded": "Germany"} }' \
-    https://non-alc.herokuapp.com/manufacturers
