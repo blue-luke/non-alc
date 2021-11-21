@@ -13,11 +13,15 @@ Run db:migrate and db:seed to populate with sample data.
 
 - Set up db and api
 - Hosted on heroku, exposed on https://non-alc.herokuapp.com/drinks
+- Use a serializer to structure the JSON, enabling nested data
 
 ## Existing obstacles
 
 
 ## Obstacles overcome, reverse chronological
+
+- Serializer wouldn't dispaly desired information
+- The initial db setup and interrelations were incorrect, due to mis-usage of singular and plurals
 
 - Can no longer get api running on local host, an error when running bin/rails s
 - Same error when pushing to heroku. Problem is fundamental to rails, must be addressed before proceeding. Not sure what caused the error in the first place. Probably caused by a gem called gem, now hashed out in gemfile
@@ -26,7 +30,6 @@ Run db:migrate and db:seed to populate with sample data.
 
 ## Next steps
 
-- Use a serializer to structure the JSON, enabling nested data
 - Enable curl commands to get and post data
 - Clarify fetch routes and responses
 
