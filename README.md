@@ -14,9 +14,11 @@ Run db:migrate and db:seed to populate with sample data.
 - Set up db and api
 - Hosted on heroku
 - Use a serializer to structure the JSON, enabling nested data
+- Enable curl commands to get and post data
 
-## Existing obstacles
+## Existing blockers
 
+- Creating a drink requires knowing the manufacturer id. Without a front end to fetch and store this, how can the user know what the manufacturer id is?
 
 ## Paths (for command line)
 
@@ -28,7 +30,7 @@ To create manufacturer:
     https://non-alc.herokuapp.com/manufacturers
 To create drink:
 - curl -X POST -H "Content-Type: application/json" \
-    -d '{"drink": { "manufacturer": 4, "name": "Blue", "drink_type": "lager", "concentration": 0.05 } }' \
+    -d '{"drink": { "manufacturer_id": 4, "name": "Blue", "drink_type": "lager", "concentration": 0.05 } }' \
     https://non-alc.herokuapp.com/drinks
 
 ## Blockers overcome, reverse chronological
@@ -44,8 +46,7 @@ To create drink:
 
 ## Next steps
 
-- Enable curl commands to get and post data
-- Clarify fetch routes and responses
+- Clarify error messages and responses
 
 ## Possible next steps
 
