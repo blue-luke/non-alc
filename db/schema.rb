@@ -21,8 +21,8 @@ ActiveRecord::Schema.define(version: 2021_11_19_230022) do
     t.float "concentration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "manufacturers_id", null: false
-    t.index ["manufacturers_id"], name: "index_drinks_on_manufacturers_id"
+    t.bigint "manufacturer_id", null: false
+    t.index ["manufacturer_id"], name: "index_drinks_on_manufacturer_id"
   end
 
   create_table "manufacturers", force: :cascade do |t|
@@ -33,5 +33,5 @@ ActiveRecord::Schema.define(version: 2021_11_19_230022) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "drinks", "manufacturers", column: "manufacturers_id"
+  add_foreign_key "drinks", "manufacturers"
 end

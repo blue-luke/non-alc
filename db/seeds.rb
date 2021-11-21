@@ -10,6 +10,6 @@ Manufacturer.create(name: 'Guinness', year_founded: '1759', country_founded: 'Re
 Manufacturer.create(name: 'Heineken', year_founded: '1864', country_founded: 'Netherlands')
 Manufacturer.create(name: 'Eisberg', year_founded: '1976', country_founded: 'Switzerland')
 
-Drink.create(name: '0.0', drink_type: 'stout', concentration: '0.05', manufacturers_id: 1)
-Drink.create(name: '0.0', drink_type: 'lager', concentration: '0.03', manufacturers_id: 2)
-Drink.create(name: 'sparkling white wine', drink_type: 'sparkling white wine', concentration: '0.6 ', manufacturers_id: 3)
+Drink.create(name: '0.0', drink_type: 'stout', concentration: '0.05', manufacturer_id: 1)
+Drink.create(name: '0.0', drink_type: 'lager', concentration: '0.03', manufacturer_id: 2)
+Drink.create(name: 'sparkling white wine', drink_type: 'sparkling white wine', concentration: '0.6 ', manufacturer_id: 3)
