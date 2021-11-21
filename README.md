@@ -28,18 +28,19 @@ To create manufacturer:
     https://non-alc.herokuapp.com/manufacturers
 To create drink:
 - curl -X POST -H "Content-Type: application/json" \
-    -d '{"drink": {"name": "Blue", "drink_type": "lager", "concentration": 0.05 } }' \
+    -d '{"drink": { "manufacturer": 4, "name": "Blue", "drink_type": "lager", "concentration": 0.05 } }' \
     https://non-alc.herokuapp.com/drinks
 
-## Obstacles overcome, reverse chronological
+## Blockers overcome, reverse chronological
 
 - Serializer wouldn't dispaly desired information
-- The initial db setup and interrelations were incorrect, due to mis-usage of singular and plurals
+- The initial db setup and interrelations were incorrect, due to mis-use of singular and plurals
 
 - Can no longer get api running on local host, an error when running bin/rails s
 - Same error when pushing to heroku. Problem is fundamental to rails, must be addressed before proceeding. Not sure what caused the error in the first place. Probably caused by a gem called gem, now hashed out in gemfile
 
-- Recurring problem with the platform: Your bundle only supports platforms ["x86_64-darwin-20"] but your local platform is x86_64-linux. Fixed by executing: bundle lock --add-platform x86_64-linux.
+- Recurring problem with the platform: Your bundle only supports platforms ["x86_64-darwin-20"] but your local platform is x86_64-linux
+- Fixed by executing: bundle lock --add-platform x86_64-linux.
 
 ## Next steps
 

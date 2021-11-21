@@ -46,6 +46,6 @@ class DrinksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def drink_params
-      params.require(:drink).permit(:manufacturer, :name, :drink_type, :concentration)
+      params.require(:drink).permit(:manufacturer_id, :name, :drink_type, :concentration)
     end
 end
