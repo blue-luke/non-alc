@@ -1,6 +1,6 @@
 # README
 
-## Overivew
+## Overview
 
 This was a short exercise designed to practice my API skills. The aim was to set up an API providing JSON data on non-alcoholic drinks in a short amount of time.
 
