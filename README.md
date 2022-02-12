@@ -29,12 +29,12 @@ To display drinks:
 To display manufacturers:
 - curl https://non-alc.herokuapp.com/manufacturers
 
-To create manufacturer:
+Feel free to create a manufacturer, changing the parameters as you see fit:
 - curl -X POST -H "Content-Type: application/json" \
     -d '{"manufacturer": {"name": "Becks", "year_founded": "1873", "country_founded": "Germany"} }' \
     https://non-alc.herokuapp.com/manufacturers
 
-To create drink:
+Feel free to create drink, changing the parameters as you see fit:
 - curl -X POST -H "Content-Type: application/json" \
     -d '{"drink": { "manufacturer_id": 4, "name": "Blue", "drink_type": "lager", "concentration": 0.05 } }' \
     https://non-alc.herokuapp.com/drinks
