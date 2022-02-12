@@ -25,10 +25,15 @@ Run db:migrate and db:seed to populate with sample data.
 
 To display drinks:
 - curl https://non-alc.herokuapp.com/drinks 
+
+To display manufacturers:
+- curl https://non-alc.herokuapp.com/manufacturers
+
 To create manufacturer:
 - curl -X POST -H "Content-Type: application/json" \
     -d '{"manufacturer": {"name": "Becks", "year_founded": "1873", "country_founded": "Germany"} }' \
     https://non-alc.herokuapp.com/manufacturers
+
 To create drink:
 - curl -X POST -H "Content-Type: application/json" \
     -d '{"drink": { "manufacturer_id": 4, "name": "Blue", "drink_type": "lager", "concentration": 0.05 } }' \
