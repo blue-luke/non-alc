@@ -4,6 +4,13 @@
 
 This was a short exercise designed to practice my API skills. The aim was to set up an API providing JSON data on non-alcoholic drinks in a short amount of time.
 
+## docker-branch
+
+This branch was extended to allow for use of docker containers.
+- Pull image
+- $ docker run -p 3000:3000 non-alc
+- Visiting localhost:3000 shows an active record error, indicating server is up
+
 ## Setup
 
 Download the repo and push it to a host such as heroku.
