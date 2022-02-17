@@ -11,6 +11,7 @@ To run server and db from containers using docker-compose:
 - (Below instructions rely on Dockerfile and docker-compose.yml)
 - $ docker-compose build
 - $ docker-compose up
+
 (Open another terminal)
 - $ docker-compose run web rake db:create
 - $ docker-compose run web rake db:migrate
