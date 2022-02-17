@@ -7,6 +7,16 @@ This was a short exercise designed to practice my API skills. The aim was to set
 ## docker_compose_branch
 
 Working from https://tomkadwill.com/dockerizing-existing-rails-app
+To run server and db from containers using docker-compose:
+- (Below instructions rely on Dockerfile and docker-compose.yml)
+- $ docker-compose build
+- $ docker-compose up
+(Open another terminal)
+- $ docker-compose run web rake db:create
+- $ docker-compose run web rake db:migrate
+- $ docker-compose run web rake db:seed
+- Visit localhost::3000/drinks
+- Visit localhost::3000/manufacturers
 
 ## docker-branch
 
