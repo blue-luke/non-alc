@@ -7,11 +7,14 @@ This was a short exercise designed to practice my API skills. The aim was to set
 ## docker-branch
 
 This branch was extended to allow for use of docker containers.
+For server:
 - Pull images non-alc (for server) and non-alc-db (for database)
 - $ docker run -p 3000:3000 blueluke/practice:non-alc
+- $ docker ps shows a running server
 - Visiting localhost:3000 shows an active record error
+For db:
 - $ docker run blueluke/practice:non-alc-db
-- Process fails with an error 'could not connect to server', indicating db only needs a server to be created
+- Process fails with an error 'could not connect to server', indicating db only needs to be connected to a server to be created
 
 ## Setup
 
