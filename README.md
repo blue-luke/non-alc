@@ -1,6 +1,6 @@
 # README
 
-## Overview
+## Overview of main
 
 This was a short exercise designed to practice my API skills. The aim was to set up an API providing JSON data on non-alcoholic drinks in a short amount of time.
 
@@ -9,7 +9,7 @@ This was a short exercise designed to practice my API skills. The aim was to set
 This branch was extended to allow for use of docker containers.
 - Pull images non-alc (for server) and non-alc-db (for database)
 - $ docker run -p 3000:3000 blueluke/practice:non-alc
-- Visiting localhost:3000 shows an active record error, indicating server is up
+- Visiting localhost:3000 shows an active record error
 - $ docker run blueluke/practice:non-alc-db
 - Process fails with an error 'could not connect to server', indicating db only needs a server to be created
 
