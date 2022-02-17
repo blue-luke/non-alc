@@ -4,13 +4,17 @@
 
 This was a short exercise designed to practice my API skills. The aim was to set up an API providing JSON data on non-alcoholic drinks in a short amount of time.
 
+## docker_compose_branch
+
+Working from https://tomkadwill.com/dockerizing-existing-rails-app
+
 ## docker-branch
 
 This branch was extended to allow for use of docker containers.
 For server:
 - Pull images non-alc (for server) and non-alc-db (for database)
 - $ docker run -p 3000:3000 blueluke/practice:non-alc
-- $ docker ps shows a running server
+- $ docker ps [shows a running server]
 - Visiting localhost:3000 shows an active record error
 For db:
 - $ docker run blueluke/practice:non-alc-db
